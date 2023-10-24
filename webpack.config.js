@@ -20,4 +20,12 @@ module.exports = {
       scriptLoading: "defer",
     }),
   ],
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+    ],
+  },
 };
