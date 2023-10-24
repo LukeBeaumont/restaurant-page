@@ -1,0 +1,12 @@
+#content {
+  display: flex;
+  justify-content: center;
+}
+.heading {
+  color: lightsalmon;
+}
+.tabs {
+  height: 20px;
+  width: 20px;
+  background-color: red;
+}
