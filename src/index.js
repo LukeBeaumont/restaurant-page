@@ -4,12 +4,14 @@ import createTabs from "../create-tabs";
 
 const content = document.getElementById("content");
 
-document.body.appendChild(loadMainPage());
-
 function appendTabs() {
   for (let i = 0; i < 3; i++) {
-    content.appendChild(createTabs());
+    container.appendChild(createTabs());
   }
 }
+const container = document.createElement("div");
+container.classList.add("container");
 
+content.appendChild(container);
 appendTabs();
+content.appendChild(loadMainPage());
