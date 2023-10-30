@@ -13,6 +13,10 @@
   margin: 20px;
 }
 
+.img {
+  height: 300px;
+}
+
 .container {
   display: flex;
   margin-top: 20px;
