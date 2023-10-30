@@ -28,4 +28,8 @@ function loadImg() {
   content.appendChild(pic);
 }
 
-function appendText() {}
+function appendText() {
+  const text = document.createElement("div");
+  content.appendChild(text);
+  text.textContent = "Welcome to Koji boys amazing restaurant.";
+}
