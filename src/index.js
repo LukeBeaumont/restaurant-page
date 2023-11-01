@@ -12,11 +12,19 @@ const contact = document.querySelector(".contact");
 
 function addListeners() {
   home.addEventListener("click", () => {
+    clearPage();
     loadMainPage();
   });
   menu.addEventListener("click", () => {
+    clearPage();
     loadMenu();
   });
 }
 
 addListeners();
+
+function clearPage() {
+  const pageContent = document.querySelector(".page-content");
+  const content = document.querySelector(".content");
+  content.removeChild(pageContent);
+}

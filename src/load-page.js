@@ -6,8 +6,13 @@ export default function loadMainPage() {
   loadImg();
   appendText();
 }
-
+Not being called yet!!
 const content = document.getElementById("content");
+
+// nest in another div to make clearing page easier
+const pageContent = document.createElement("div");
+pageContent.classList.add("page-content");
+content.appendChild(pageContent);
 
 function loadHeading() {
   const heading = document.createElement("div");
@@ -17,7 +22,7 @@ function loadHeading() {
 }
 
 function appendHeading() {
-  content.appendChild(loadHeading());
+  pageContent.appendChild(loadHeading());
 }
 
 function loadImg() {
@@ -25,11 +30,11 @@ function loadImg() {
   pic.src = img;
   pic.classList.add("img");
 
-  content.appendChild(pic);
+  pageContent.appendChild(pic);
 }
 
 function appendText() {
   const text = document.createElement("div");
-  content.appendChild(text);
+  pageContent.appendChild(text);
   text.textContent = "Welcome to Koji boys amazing restaurant.";
 }
