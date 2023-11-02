@@ -6,7 +6,7 @@ export default function loadMainPage() {
   loadImg();
   appendText();
 }
-Not being called yet!!
+
 const content = document.getElementById("content");
 
 // nest in another div to make clearing page easier

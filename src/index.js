@@ -3,8 +3,8 @@ import loadMainPage from "./load-page";
 import appendTabs from "./create-tabs";
 import loadMenu from "./load-menu.js";
 
-appendTabs();
 loadMainPage();
+appendTabs();
 
 const home = document.querySelector(".home");
 const menu = document.querySelector(".menu");
@@ -25,6 +25,8 @@ addListeners();
 
 function clearPage() {
   const pageContent = document.querySelector(".page-content");
-  const content = document.querySelector(".content");
-  content.removeChild(pageContent);
+  const content = document.getElementById("content");
+  if (pageContent) {
+    content.removeChild(pageContent);
+  }
 }
