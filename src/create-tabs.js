@@ -8,6 +8,8 @@ function createTabs(className) {
 export default function appendTabs() {
   const content = document.getElementById("content");
   const container = document.createElement("div");
+  container.classList.add("container");
+
   for (let i = 0; i < 3; i++) {
     if (i === 0) {
       container.appendChild(createTabs("home"));
@@ -17,7 +19,5 @@ export default function appendTabs() {
       container.appendChild(createTabs("contact"));
     }
   }
-  container.classList.add("container");
-
   content.appendChild(container);
 }

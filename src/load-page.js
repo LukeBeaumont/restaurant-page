@@ -1,28 +1,24 @@
 import img from "../img/koji-chef.jpeg";
 
 export default function loadMainPage() {
+  createPageContent();
   loadHeading();
-  appendHeading();
   loadImg();
   appendText();
 }
-
 const content = document.getElementById("content");
-
-// nest in another div to make clearing page easier
 const pageContent = document.createElement("div");
-pageContent.classList.add("page-content");
-content.appendChild(pageContent);
+
+function createPageContent() {
+  pageContent.classList.add("page-content");
+  content.appendChild(pageContent);
+}
 
 function loadHeading() {
   const heading = document.createElement("div");
   heading.innerHTML = "<h1>Koji's Restaurant</h1>";
   heading.classList.add("heading");
-  return heading;
-}
-
-function appendHeading() {
-  pageContent.appendChild(loadHeading());
+  pageContent.appendChild(heading);
 }
 
 function loadImg() {
