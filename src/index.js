@@ -13,7 +13,7 @@ const contact = document.querySelector(".contact");
 function addListeners() {
   home.addEventListener("click", () => {
     clearPage();
-    loadMainPage();
+    loadHomePage();
   });
   menu.addEventListener("click", () => {
     clearPage();
