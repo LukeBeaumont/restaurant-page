@@ -2,6 +2,7 @@ import "./style.css";
 import loadMainPage from "./load-page";
 import appendTabs from "./create-tabs";
 import loadMenu from "./load-menu.js";
+
 appendTabs();
 loadMainPage();
 
@@ -25,6 +26,7 @@ addListeners();
 function clearPage() {
   const pageContent = document.querySelector(".page-content");
   const content = document.getElementById("content");
-
-  content.removeChild(pageContent);
+  if (pageContent) {
+    content.removeChild(pageContent);
+  }
 }
