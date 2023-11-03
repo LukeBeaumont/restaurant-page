@@ -45,3 +45,7 @@
 .contact::after {
   content: "Contact";
 }
+
+ul {
+  list-style: none;
+}

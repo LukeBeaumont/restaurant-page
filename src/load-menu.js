@@ -12,14 +12,14 @@ export default function loadMenu() {
   menu.appendChild(itemOne);
 
   const itemTwo = document.createElement("li");
-  itemOne.textContent = "Puppachino";
+  itemTwo.textContent = "Puppachino";
   menu.appendChild(itemTwo);
 
   const itemThree = document.createElement("li");
-  itemOne.textContent = "chip";
+  itemThree.textContent = "chip";
   menu.appendChild(itemThree);
 
   const itemFour = document.createElement("li");
-  itemOne.textContent = "turkey and tripe";
+  itemFour.textContent = "Turkey and tripe";
   menu.appendChild(itemFour);
 }
