@@ -2,6 +2,7 @@ import "./style.css";
 import loadHomePage from "./load-page";
 import appendTabs from "./create-tabs";
 import loadMenu from "./load-menu.js";
+import loadContactPage from "./load-contact.js";
 
 appendTabs();
 loadHomePage();
@@ -18,6 +19,10 @@ function addListeners() {
   menu.addEventListener("click", () => {
     clearPage();
     loadMenu();
+  });
+  contact.addEventListener("click", () => {
+    clearPage();
+    loadContactPage();
   });
 }
 
